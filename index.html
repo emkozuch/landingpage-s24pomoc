@@ -9,13 +9,15 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 
   <title>Hello, world!</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="container navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">S24 Pomoc</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -24,48 +26,52 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Nasza usługa <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#service">Nasza usługa <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#pricing">Cennik</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Dlaczego my?</a>
+          <a class="nav-link" href="#about__us">Dlaczego my?</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Zasady Współpracy</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt</a>
+          <a class="nav-link" href="#form">Kontakt</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="first">
-    <div class="first__header">
-      <h1>ZAŁOŻYMY DLA CIEBIE<br> SPÓŁKĘ W 3 DNI. PROSTO,<br> SZYBKO I OSZCZĘDNIE.</h1>
+  <div id="first" class="row first">
+    <div class="first__text col-md-6">
+      <div class="first__header text-justify">
+        <h1 class="header__main">ZAŁOŻYMY DLA CIEBIE<br> SPÓŁKĘ W 3 DNI. PROSTO,<br> SZYBKO I OSZCZĘDNIE.</h1>
+      </div>
+      <div class="paragraph text-justify">
+        <p>Chcesz założyć spółkę, ale nie wiesz jak wygląda<br> cały proces? Umów się na spotkanie z naszym<br>
+          doradcą.
+          Przeprowadzimy Cię przez cały proces<br> rejestracji. Możesz rozpocząć swój biznes nawet<br> w 3 dni.</p>
+      </div>
+      <div>
+        <a class="btn btn-primary btn-lg" href="#form" role="button">Dowiedz się więcej</a>
+      </div>
+      <div class="next__section">
+        <a href="#service" class="arrow fas fa-angle-double-down fa-2x"></a>
+      </div>
     </div>
-    <div class="first__paragraph">
-      <p>Chcesz założyć spółkę, ale nie wiesz jak wygląda<br> cały proces? Umów się na spotkanie z naszym<br> doradcą.
-        Przeprowadzimy Cię przez cały proces<br> rejestracji. Możesz rozpocząć swój biznes nawet<br> w 3 dni.</p>
-    </div>
-    <div>
-      <button type="button" class="btn btn-lg btn-primary" disabled>Dowiedz się więcej</button>
-    </div>
-
   </div>
-  <div id="service" class="container service__section">
-    <div class="section__text text-center">
-      <h1>Na czym polega nasza usługa?</h1>
-      <h5>Prosta i szybka rejestracja spółki w 3 krokach.</h5>
-    </div>
-    <div>
-      <p class="text-center"><b>System S24 pozwala na założenie spółki w ciągu 3 dni roboczych.</b> Niestety,
+
+  <div id="service" class="service__section">
+    <div class="container section__text text-center">
+      <h1 class="header__main">Na czym polega nasza usługa?</h1>
+      <h5 class="header__five">Prosta i szybka rejestracja spółki w 3 krokach.</h5>
+      <p class="paragraph"><b>System S24 pozwala na założenie spółki w ciągu 3 dni roboczych.</b> Niestety,
         przeciętny<br>
         przedsiębiorca napotyka w trakcie rejestracji na wiele problemów. Chcemy pomóc Ci w założeniu swojego biznesu.</p>
 
-      <div class="card-deck">
+      <div class=" text-center card-deck">
         <div class="card">
           <div class="text-center">
             <img class="card-img-top" src="img/icon.png" alt="Card image cap">
@@ -106,62 +112,69 @@
     </div>
   </div>
 
+
   <div id="pricing" class="price__section">
-    <h1 class="text-center">KOSZT REJESTRACJI KAŻDEJ SPÓŁKI TO 499 PLN BRUTTO.</h1>
+    <div class="container price_container text-center">
+      <h2>KOSZT REJESTRACJI KAŻDEJ SPÓŁKI TO 499 PLN BRUTTO.</h2>
+    </div>
   </div>
 
   <div id="character" class="character__section">
+
     <div class="container">
-    <div class="section__text text-center">
-      <h1>Dlaczego my?</h1>
-      <p>Na rynku działa wiele firm, oferujących sprzedaż gotowych spółek. Czym wyróżnia się nasz oferta?</p>
-    </div>
+      <div class="bg__image"></div>
+      <div class="section__text text-center">
+        <h2 class="header__two">Dlaczego my?</h2>
+        <p class="paragraph">Na rynku działa wiele firm, oferujących sprzedaż gotowych spółek. Czym wyróżnia się nasz
+          oferta?</p>
+      </div>
 
-    <div class="card-deck">
-      <div class="card">
-        <div class="text-center">
-          <img class="card-img-top" src="img/icon.png" alt="Card image cap">
+      <div class="card-deck">
+        <div class="card">
+          <div class="text-center">
+            <img class="card-img-top" src="img/icon.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">CHARAKTER USŁUGI</h5>
+            <p class="card-text text-center">Nie handlujemy gotowymi spółkami. Pomagamy Ci założyć Twoją własną spółkę,
+              nad którą
+              masz 100% kontroli od pierwszego dnia jej powstania.</p>
+
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title text-center">CHARAKTER USŁUGI</h5>
-          <p class="card-text text-center">Nie handlujemy gotowymi spółkami. Pomagamy Ci założyć Twoją własną spółkę,
-            nad którą
-            masz 100% kontroli od pierwszego dnia jej powstania.</p>
+        <div class="card">
+          <div class="text-center">
+            <img class="card-img-top" src="img/icon.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">OSZCZĘDNOŚĆ</h5>
+            <p class="card-text text-center">Dzięki nam jesteś w stanie zaoszczędzić nawet 1500 PLN. Kupowanie gotowej
+              spółki
+              najczęściej nie ma sensu - oszczędniej jest założyć ją samemu.</p>
 
+          </div>
+        </div>
+        <div class="card">
+          <div class="text-center">
+            <img class="card-img-top" src="img/icon.png" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">INDYWIDUALNE PODEJŚCIE</h5>
+            <p class="card-text text-center">Nie oferujemy usług zdalnych. Masz możliwość porozmawiania z nami
+              osobiście
+              i
+              wyjaśnienia wszystkich wątpliwości.</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="text-center">
-          <img class="card-img-top" src="img/icon.png" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title text-center">OSZCZĘDNOŚĆ</h5>
-          <p class="card-text text-center">Dzięki nam jesteś w stanie zaoszczędzić nawet 1500 PLN. Kupowanie gotowej
-            spółki
-            najczęściej nie ma sensu - oszczędniej jest założyć ją samemu.</p>
-
-        </div>
-      </div>
-      <div class="card">
-        <div class="text-center">
-          <img class="card-img-top" src="img/icon.png" alt="Card image cap">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title text-center">INDYWIDUALNE PODEJŚCIE</h5>
-          <p class="card-text text-center">Nie oferujemy usług zdalnych. Masz możliwość porozmawiania z nami osobiście
-            i
-            wyjaśnienia wszystkich wątpliwości.</p>
-        </div>
-      </div>
-    </div>
     </div>
   </div>
 
   <div id="about__us" class="about__section">
-    <div>
-      <h1>Kilka słów od nas</h1>
+    <div class="text-center">
+      <h2 class="header__two">Kilka słów od nas</h2>
     </div>
-    <div>
+    <div class="text-center">
       <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
       </iframe>
 
@@ -181,7 +194,7 @@
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Telefon</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="tel">
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Email</label>
@@ -218,7 +231,7 @@
       </form>
     </div>
   </div>
- 
+
 
 
 

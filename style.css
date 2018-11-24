@@ -1,13 +1,56 @@
-.navbar-nav{
+
+.navbar-nav {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-content: space-between;
 }
 
+/* first section */
 
-.first {
-    background-color: bisque;
+.first__text {
+    margin-left: 50px;
+}
+
+.first .header__main {
+    padding-bottom: 20px;
+}
+
+.first .paragraph {
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+.first .btn {
+    border-radius: 40px;
+    height: 70px;
+    width: 250px;
+    padding-top: 17px;
+    margin-bottom: 25px;
+    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
+    border: none;
+}
+
+.first .btn:hover {
+    color: black;
+}
+
+/* global */
+
+.next__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.arrow {
+    text-decoration: none;
+    color: rgb(65, 64, 64)
+}
+
+.arrow:hover {
+    text-decoration: none;
+    color: rgb(37, 145, 228);
 }
 
 .service {
@@ -19,49 +62,85 @@
     width: 100px;
 }
 
-
-
 /* price section */
-.price__section{
+
+.price__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 200px;
-    background-color: aqua;
+    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
+    color: white;
 }
 
 /* service section */
-.service__section{
-    background-color: blueviolet;
-}
+
+
+
 /* 
 character section */
-  .character__section{
-      background-color: rgb(91, 167, 81);
-  }
+
+.character__section {
+    background-image: url("img/black-and-white-image-of-colleagues-standing-in-office-and-looking-at-city-view-through-window.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    
+}
+.bg__image{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.character__section .paragraph {
+    color: #4fd6fe;
+    z-index: 2 !important;
+}
 
 /* about section */
-.about__section{
-    background-color: aqua;
-}
+
+
 
 /* form section */
-.form__section{
-    background-color: blueviolet;
- 
+
+.form__section {
+    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
 }
+
 /* cards */
-.card{
+
+.card {
     background-color: inherit;
     border: none;
 }
 
-/* to na górze */
-.first{
+.card-deck {
+    margin-left: none !important;
+    margin-right: none !important;
+}
 
+/* to na górze */
+
+.first {
     height: 500px;
     margin-bottom: 100px;
     padding: 20px;
 }
-.first{
+
+.first {
     background-image: url("img/shotstash_0185.jpg");
-    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
     width: 100%;
+    height: 100%;
+}
+
+/* header */
+
+.header__five {
+    color: #4fd6fe;
 }
