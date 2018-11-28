@@ -1,9 +1,13 @@
-
-
 /* navbar section */
 
+body {
+    background-color: #1F2428;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .navbar {
-    background-color: rgba(37, 145, 228, 0.8) !important;
+    background-color: rgba(148, 138, 109, 0.95) !important;
+    padding: 0px 0px 0px 30px;
 }
 
 .navbar-nav {
@@ -17,47 +21,46 @@
 }
 
 .nav-link {
-    margin-right: 50px;
+    padding: 12px 35px;
+    margin: 0px 0px;
+    
 }
 
 .nav-link:hover {
-    background-color: rgb(35, 136, 224);
-    border-radius: 5px;
+    color: #785B95 !important;
+    background-color: #1F2428;
 }
+
 
 /* -------------------------------------------------------------- */
 
 /* first section */
 
 .first {
- 
+    width: 100%;
     padding: 20px;
-    background-image: radial-gradient(90% 177% at top right, rgba(255, 255, 255, 0)47%, rgba(255, 255, 255, 0.9)63%, rgba(255, 255, 255, 0.9)15%), url(img/handshake.jpg);
-    background-position: center center;
+    background-image: radial-gradient(110% 137% at top right, rgba(255, 255, 255, 0)47%, rgba(31, 36, 40, 0.9)63%, rgba(31, 36, 40, 0.9)15%), url(img/handshake.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-
 .first__text {
     font-size: 20px;
-    width: 33%;
     margin: 50px 0px 50px 50px;
     color: rgb(37, 145, 228);
 }
 
 .first .header__main {
     margin-bottom: 20px;
-    /* font-size: 35px; */
     text-align: left;
+    color: #785B95;
 }
 
 .first .paragraph {
     text-align: justify;
-    color: black;
-    
-    /* font-size: 19px; */
+    color: #C5A14D;
     margin-bottom: 30px;
 }
 
@@ -81,10 +84,33 @@
 
 .service__section {
     padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.service__section .header__main {
+    color: #fff;
+}
+
+.header__five {
+    color: #785B95;
 }
 
 .service__text {
     margin-bottom: 35px;
+}
+.service__section .card {
+    padding-top: 10px;
+    color: #785B95;
+    background-color: inherit;
+    border: none;
+}
+.service__section .card:hover {
+    background-color: rgb(184, 184, 184);
+    
+}
+.separator {
+    width: 30%;
+    border: 2px solid #4fd6fe;
 }
 
 /* -------------------------------------------------------------- */
@@ -92,9 +118,7 @@
 /* price section */
 
 .price__section {
-    padding-top: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 200px;
     background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
@@ -106,40 +130,25 @@
 /*character section */
 
 .character__section .header__main {
-    position: relative;
     margin-bottom: 50px;
     color: #4fd6fe;
-    z-index: 2;
-    filter: blur(0px);
 }
 
 .character__section .card {
-    position: relative;
     color: #000;
     background-color: rgba(184, 184, 184, 0.75);
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    filter: blur(0px);
 }
 
 .character__section .card-text {
-    font-weight: bold;
     font-size: 20px;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: center;
+    
 }
 
 .character__section {
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
-    /* background-image: url("img/black-and-white-image-of-colleagues-standing-in-office-and-looking-at-city-view-through-window.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
 }
 
 .background {
@@ -170,37 +179,16 @@
 
 /* -------------------------------------------------------------- */
 
-/* global */
-
-.next__section {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.arrow {
-    text-decoration: none;
-    color: rgb(65, 64, 64)
-}
-
-.arrow:hover {
-    text-decoration: none;
-    color: rgb(37, 145, 228);
-}
-
-.card-img-top {
-    height: 100px;
-    width: 100px;
-}
 
 /* form section */
 
 .form {
     width: 75%;
+    color: rgb(133, 133, 133);
 }
 
 .form__section {
-    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
+    background-color: inherit;
     margin: 0px 0px;
 }
 
@@ -213,26 +201,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(133, 133, 133);
 }
 
 .form-check-label {
+    cursor: pointer;
     text-align: justify;
     padding-right: 15px;
+    color: rgb(133, 133, 133);
+}
+
+.form-check-input {
+    cursor: pointer;
 }
 
 .tooltip-text {
     visibility: hidden;
-    width: auto;
     background-color: rgba(94, 94, 94, 0.88);
     color: #fff;
     padding: 20px 20px;
     text-align: justify;
-    padding: 20px 20px;
     position: absolute;
-    z-index: 1;
     bottom: 74%;
-    left: -80%;
-    right: 103%;
+    left: -98%;
+    right: 100%;
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.5s;
@@ -247,47 +239,14 @@
     margin-top: 10px;
 }
 
-/* cards */
+.form-control {
+      background-color: inherit;   
+     color: #785B95; 
+ }
 
-.service__section .card {
-    background-color: inherit;
-    border: none;
-}
-
-.service__section .card:hover {
-    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
-    -webkit-box-shadow: 10px 10px 19px 3px rgba(184, 184, 184, 1);
-    -moz-box-shadow: 10px 10px 19px 3px rgba(184, 184, 184, 1);
-    box-shadow: 10px 10px 19px 3px rgba(184, 184, 184, 1);
-}
-
-.card-deck {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-}
-
-/* header */
-
-.header__five {
-    color: #4fd6fe;
-}
-
-/*card section separaota*/
-
-.separator {
-    width: 30%;
-    border: 2px solid #4fd6fe;
-}
-
-/* scroll btn */
-
-.scroll-icon {
-    position: fixed;
-    right: 2%;
-    bottom: 3%;
-    color: #4fd6fe;
-}
-
-/* linear-gradient(-87deg, rgba(255, 255, 255, 0) 42%, rgba(255, 255, 255, 1) 69%, rgba(255, 255, 255, 1)88%), 
-linear-gradient(-152deg, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 1) 100%),
- url(img/shotstash_0185.jpg); */
+.form-control:focus {
+     color: #785B95; 
+     background-color: inherit;  
+      border: #785B95 1px solid; 
+     box-shadow: none; 
+} 
