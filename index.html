@@ -24,7 +24,7 @@
       </button>
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#service">Nasza usługa</a>
         </li>
         <li class="nav-item">
@@ -43,22 +43,19 @@
     </div>
   </nav>
 
-  <div id="first" class="row first">
-    <div class="first__text col-md-6">
-      <div class="first__header text-justify">
+  <div id="first" class="first">
+    <div class="first__text col-xl-6 col-lg-6 col-md-12">
+      <div class="first__header">
         <h1 class="header__main">ZAŁOŻYMY DLA CIEBIE<br> SPÓŁKĘ W 3 DNI. PROSTO,<br> SZYBKO I OSZCZĘDNIE.</h1>
       </div>
-      <div class="paragraph text-justify">
+      <div class="paragraph">
         <p>Rejestracja spółki to skomplikowany proces, który przysparza wiele problemów. Skorzystaj z pomocy naszych
           doradców, którzy spotkają się z Tobą osobiście i pomogą Ci zarejestrować Twoją spółkę
       </div>
       <div>
-        <a class="btn btn-primary btn-lg" href="#form" role="button">Dowiedz się więcej</a>
+        <a class="btn btn-primary btn-lg" href="#service" role="button">Dowiedz się więcej</a>
       </div>
-      <div class="next__section">
-        <a href="#service" class="arrow fas fa-angle-double-down fa-2x"></a>
-      </div>
-      
+      <div class="col-md-6 empty-column"></div>
     </div>
     
     
@@ -183,10 +180,10 @@
     <div class="col-md-6 col-sm-12 form__column">
       <form class="form">
         <div class="form-group text-input">
-          <input type="name" class="form-control" id="validationTooltip01" placeholder="Imię i Nazwisko" required>
+          <input type="text" name="fullname" class="form-control" id="validationTooltip" placeholder="Imię i Nazwisko" required>
         </div>
         <div class="form-group text-input">
-          <input type="phone" class="form-control" id="inputPhone" placeholder="Telefon" required>
+          <input type="tel" class="form-control" id="inputPhone" placeholder="Telefon" required>
         </div>
         <div class="form-group text-input">
           <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
