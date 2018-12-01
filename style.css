@@ -6,76 +6,83 @@ body {
 }
 
 .navbar {
-    background-color: rgba(148, 138, 109, 0.95) !important;
+    background-color: rgba(31, 36, 40, 0.9) !important;
     padding: 0px 0px 0px 30px;
+    height: 55px;
 }
 
 .navbar-nav {
     width: 100%;
     text-transform: uppercase;
     font-weight: bold;
+    
 }
 
 .navbar-brand {
+    padding-right: 20px;
     margin-right: 30px;
+    color: #C5A14D !important;
+    border-right: 1px solid rgb(133, 133, 133);
 }
 
 .nav-link {
     padding: 12px 35px;
     margin: 0px 0px;
+    color: rgb(133, 133, 133) !important;
     
 }
 
 .nav-link:hover {
-    color: #785B95 !important;
+    color: #C5A14D !important;
     background-color: #1F2428;
+    border: solid 1px #5B616A;
 }
 
+.navbar-collapse {
+    background-color:  rgba(31, 36, 40, 0.9)
+}
 
 /* -------------------------------------------------------------- */
 
-/* first section */
+/* hero section */
 
-.first {
+.hero {
+    color: rgb(133, 133, 133);
     width: 100%;
-    padding: 20px;
-    background-image: radial-gradient(110% 137% at top right, rgba(255, 255, 255, 0)47%, rgba(31, 36, 40, 0.9)63%, rgba(31, 36, 40, 0.9)15%), url(img/handshake.jpg);
+    padding: 60px 50px;
+    background-image: radial-gradient(96% 160% at top right, rgba(255, 255, 255, 0)47%, rgba(31, 36, 40, 0.97)63%, rgba(31, 36, 40, 0.97)15%), url(img/handshake.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-.first__text {
-    font-size: 20px;
-    margin: 50px 0px 50px 50px;
-    color: rgb(37, 145, 228);
-}
-
-.first .header__main {
-    margin-bottom: 20px;
-    text-align: left;
-    color: #785B95;
-}
-
-.first .paragraph {
+.hero__text {
     text-align: justify;
-    color: #C5A14D;
+    width: 35%;
+}
+
+.hero .header__one {
+    font-size: 40px;
     margin-bottom: 30px;
 }
 
-.first .btn {
-    border-radius: 40px;
-    height: 70px;
-    width: 13rem;
-    padding-top: 17px;
-    margin-bottom: 25px;
-    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
-    border: none;
+.hero .paragraph {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #785B95;
 }
 
-.first .btn:hover {
-    color: black;
+.hero .btn {
+    color: rgb(133, 133, 133);
+    border-radius: 0px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(133, 133, 133);
+    background-color: inherit;
+}
+
+.hero .btn:hover {
+    color: #C5A14D;
 }
 
 /* -------------------------------------------------------------- */
@@ -87,30 +94,42 @@ body {
     padding-bottom: 50px;
 }
 
-.service__section .header__main {
-    color: #fff;
+.service__section .header__one {
+    color: rgb(133, 133, 133);
 }
 
 .header__five {
-    color: #785B95;
+    color: #C5A14D;
 }
 
 .service__text {
     margin-bottom: 35px;
 }
+
 .service__section .card {
     padding-top: 10px;
     color: #785B95;
     background-color: inherit;
     border: none;
 }
-.service__section .card:hover {
-    background-color: rgb(184, 184, 184);
-    
+.service__section .card-text{
+    font-size: 20px;
+    text-align: justify;
 }
+.service__section .icon{
+    color: #C5A14D;
+} 
+.card-title{
+    color: rgb(133, 133, 133);
+}
+
+.service__section .card:hover {
+    border: 1px solid white;
+}
+
 .separator {
     width: 30%;
-    border: 2px solid #4fd6fe;
+    border: 2px solid #C5A14D;
 }
 
 /* -------------------------------------------------------------- */
@@ -121,8 +140,12 @@ body {
     display: flex;
     align-items: center;
     height: 200px;
-    background-image: linear-gradient(rgb(37, 145, 228), rgb(79, 211, 254));
-    color: white;
+   background-color: #211929;
+    color: rgb(133, 133, 133);
+}
+
+.price_container span {
+    color: #C5A14D;
 }
 
 /* -------------------------------------------------------------- */
@@ -131,18 +154,24 @@ body {
 
 .character__section .header__main {
     margin-bottom: 50px;
-    color: #4fd6fe;
+    color: #785B95;
 }
 
 .character__section .card {
-    color: #000;
-    background-color: rgba(184, 184, 184, 0.75);
+    color: #C5A14D;
+    background-color: rgba(31, 36, 40, 0.9);
+    
 }
+.character__section .card-body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 
 .character__section .card-text {
     font-size: 20px;
     text-align: center;
-    
 }
 
 .character__section {
@@ -152,16 +181,11 @@ body {
 }
 
 .background {
-    background-image: url("img/office.jpg");
+    background-image:linear-gradient(rgba(31, 36, 40, 0.8),rgba(31, 36, 40, 0.8)), url("img/office.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-    filter: blur(2px);
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -179,7 +203,6 @@ body {
 
 /* -------------------------------------------------------------- */
 
-
 /* form section */
 
 .form {
@@ -193,7 +216,7 @@ body {
 }
 
 .form__column {
-    padding: 100px 100px 100px 0px;
+    padding: 100px 0px 100px 0px;
 }
 
 .form__text {
@@ -203,6 +226,13 @@ body {
     align-items: center;
     color: rgb(133, 133, 133);
 }
+.form__section .header__one{
+font-size: 60px;
+}
+.form__section .header__four{
+    color: #C5A14D;
+}
+
 
 .form-check-label {
     cursor: pointer;
@@ -234,19 +264,41 @@ body {
     visibility: visible;
     opacity: 1;
 }
+.button {
+    margin-top: 10px;
+}
+.form .btn {
+    margin-top: 30px;
+    width: 100px;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(133, 133, 133);
+    background-color: inherit;
+}
 
+.form .btn:hover {
+    color: #C5A14D;
+}
 .button {
     margin-top: 10px;
 }
 
 .form-control {
-      background-color: inherit;   
-     color: #785B95; 
- }
+    background-color: inherit;
+    color: #785B95;
+}
 
 .form-control:focus {
-     color: #785B95; 
-     background-color: inherit;  
-      border: #785B95 1px solid; 
-     box-shadow: none; 
-} 
+    color: #785B95;
+    background-color: inherit;
+    border: #785B95 1px solid;
+    box-shadow: none;
+}
+
+/*-------------- footer section----------------- */
+
+.footer-section{
+    padding: 20px;
+    background-color: rgb(46, 51, 54);
+    color: rgb(133, 133, 133);
+}

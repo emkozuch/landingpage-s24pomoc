@@ -13,15 +13,16 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>Hello, world!</title>
+  <title>S24 Pomoc</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="#">S24 Pomoc</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse " id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item text-center">
@@ -43,39 +44,35 @@
     </div>
   </nav>
 
-  <div id="first" class="first">
-    <div class="first__text col-xl-6 col-lg-6 col-md-12">
-      <div class="first__header">
-        <h1 class="header__main">ZAŁOŻYMY DLA CIEBIE<br> SPÓŁKĘ W 3 DNI. PROSTO,<br> SZYBKO I OSZCZĘDNIE.</h1>
+  <div id="hero" class="hero">
+    <div class="hero__text col-xl-6 col-md-6 col-sm-12">
+      <h1 class="header__one">ZAŁOŻYMY DLA CIEBIE SPÓŁKĘ W 3 DNI. PROSTO, SZYBKO I OSZCZĘDNIE.</h1>
+      <p class="paragraph">Rejestracja spółki to skomplikowany proces, który przysparza wiele problemów. Skorzystaj z pomocy naszych
+        doradców, którzy spotkają się z Tobą osobiście i pomogą Ci zarejestrować Twoją spółkę</p>
+        <div class="btn-container">
+          <a class="btn btn-primary btn-lg float-right" href="#service" role="button">Dowiedz się więcej</a>
+        </div>
       </div>
-      <div class="paragraph">
-        <p>Rejestracja spółki to skomplikowany proces, który przysparza wiele problemów. Skorzystaj z pomocy naszych
-          doradców, którzy spotkają się z Tobą osobiście i pomogą Ci zarejestrować Twoją spółkę
-      </div>
-      <div>
-        <a class="btn btn-primary btn-lg" href="#service" role="button">Dowiedz się więcej</a>
-      </div>
-      <div class="col-md-6 empty-column"></div>
     </div>
-    
-    
+
+
   </div>
 
   <div id="service" class="service__section">
     <div class="container service__text text-center">
-      <h1 class="header__main">Na czym polega nasza usługa?</h1>
+      <h1 class="header__one">Na czym polega nasza usługa?</h1>
       <h5 class="header__five">Oferujemy pomoc w rejestracji spółki w internetowym systemie S24.</h5>
     </div>
     <div class="container">
-      <div class=" text-center card-deck">
+      <div class="card-deck">
         <div class="card">
           <div class="text-center">
-            <i class="far fa-file-alt fa-5x"></i>
+            <i class="icon far fa-file-alt fa-5x"></i>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">KROK 1</h5>
             <hr class="separator">
-            <p class="card-text text-center">Przygotowujemy Cię do rejestracji. Zakładamy potrzebne konta i ustalamy
+            <p class="card-text">Przygotowujemy Cię do rejestracji. Zakładamy potrzebne konta i ustalamy
               brzmienie umowy.
               Dajemy Ci tyle czasu, ile potrzebujesz.</p>
 
@@ -83,26 +80,24 @@
         </div>
         <div class="card">
           <div class="text-center">
-            <i class="fas fa-car fa-5x"></i>
+            <i class="icon fas fa-car fa-5x"></i>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">KROK 2</h5>
             <hr class="separator">
-            <p class="card-text text-center">Nasz doradca przyjeżdza do Ciebie osobiście i przeprowadza wraz z Tobą
-              cały
-              proces
-              rejestracji. Masz pełną kontrolę nad tym, co się dzieje.</p>
+            <p class="card-text">Nasz doradca przyjeżdza do Ciebie osobiście i przeprowadza wraz z Tobą
+              cały proces rejestracji. Masz pełną kontrolę nad tym, co się dzieje.</p>
 
           </div>
         </div>
         <div class="card">
           <div class="text-center">
-            <i class="far fa-handshake fa-5x"></i>
+            <i class="icon far fa-handshake fa-5x"></i>
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">KROK 3</h5>
             <hr class="separator">
-            <p class="card-text text-center">W ciągu 3 dni roboczych spółka wpisywana jest do KRS. Na życzenie
+            <p class="card-text">W ciągu 3 dni roboczych spółka wpisywana jest do KRS. Na życzenie
               sporządzamy formularz
               NIP-8 oraz zgłoszenie rejestracyjne VAT.</p>
           </div>
@@ -115,7 +110,7 @@
 
   <div id="pricing" class="price__section">
     <div class="container price_container text-center">
-      <h2>KOSZT REJESTRACJI KAŻDEJ SPÓŁKI TO <u>499 PLN BRUTTO</u>*</h2>
+      <h2>KOSZT REJESTRACJI KAŻDEJ SPÓŁKI TO <span><u>499 PLN BRUTTO</u></span>*</h2>
       <p>*Cena nie obejmuje kosztów sądowych (350 złotych), wkładu do spółki oraz podatku PCC (0,5% od wkładu)</p>
     </div>
   </div>
@@ -129,53 +124,50 @@
 
       <div class="card-deck">
         <div class="card">
-          <div class="text-center">
-            <!-- <i class="bounce far fa-check-circle fa-3x"></i> -->
-          </div>
-
           <div class="card-body">
+            <div>
             <p class="card-text">Chcesz szybko zarejestrować spółkę przez Internet, ale obawiasz się, że
               nie wypełnisz wniosku poprawnie.</p>
+            </div>
           </div>
         </div>
         <div class="card">
-          <div class="text-center">
-            <!-- <i class="bounce far fa-check-circle fa-3x"></i> -->
-          </div>
           <div class="card-body">
+            <div>
             <p class="card-text">Zacząłeś rejestrację samemu, ale nie wiesz jak ją dokończyć.
               Zastanawiasz się, czy wszystko uzupełniłeś i czy sąd nie wezwie Cię do uzupełnienia braków formalnych.</p>
+            </div>
           </div>
         </div>
         <div class="card">
-          <div class="text-center">
-            <!-- <i class="bounce far fa-check-circle fa-3x"></i> -->
-          </div>
           <div class="card-body">
+            <div>
             <p class="card-text">Zakładasz swój własny biznes i chcesz szybko zacząć wystawiać oraz otrzymywać
               faktury.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  
+
   </div>
 
-  <div id="about__us" class="about__section">
-    <div class="text-center">
+  <!-- <div id="about__us" class="about__section"> -->
+    <!-- <div class="text-center">
       <h2 class="header__two">Kilka słów od nas</h2>
     </div>
-    <div class="text-center">
-      
-      </iframe>
+    <div class="text-center"> -->
+
+
 
     </div>
   </div>
   <div id="form" class="row form__section">
     <div class="col-md-6 col-sm-12 form__text">
-      <h1>Wypełnij formularz</h1>
-      <h4>Skontaktujemy się z Tobą w ciągu 24 godzin.</h4>
+      <h1 class="header__one">Wypełnij formularz</h1>
+      <h4 class="header__four">Skontaktujemy się z Tobą w ciągu 24 godzin.</h4>      
     </div>
+   
 
     <div class="col-md-6 col-sm-12 form__column">
       <form class="form">
@@ -227,12 +219,16 @@
           </div>
         </div>
         <div class="button">
-          <button type="submit" class="btn btn-primary">Dowiedz się więcej!</button>
+          <button type="submit" class="btn btn-primary float-right">Wyślij</button>
         </div>
       </form>
     </div>
   </div>
+<footer id="footer-section" class="footer-section">
+    <div class="footer-content">Copyright © 2018 DMP Legal <br> Realizacja<span> Marcin Kożuchowski</span> 
+  </div>
 
+</footer>
 
 
 
