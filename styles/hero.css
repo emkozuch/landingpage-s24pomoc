@@ -1,0 +1,80 @@
+.hero-section {
+    height: 93vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(96% 160% at top right, rgba(255, 255, 255, 0)47%, rgba(255, 255, 255, 0.88)63%, rgba(255, 255, 255, 0.88)15%), url(../img/meeting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.hero-text {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.hero-section .header-one {
+    font-size: 50px;
+    color: rgb(46, 51, 54);
+}
+
+.hero-section .header-three {
+    color: rgb(46, 51, 54);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.hero-section .paragraph {
+    font-size: 22px;
+    color: #C5A14D;
+}
+.btn-container {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+.hero-section .btn {
+    color: rgb(133, 133, 133);
+    margin-bottom: 40px;
+    background-color: inherit;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.hero-section .btn:hover {
+    color: #C5A14D;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+    .hero-section {
+        height: auto;
+        padding: 100px 0px;
+    }
+    .hero-section .header-one {
+        font-size: 40px;
+    }
+    .hero-section .header-three {
+        font-size: 30px;
+    }
+    .hero-section .paragraph {
+        font-size: 20px;
+    }
+}
+@media (max-width:576px){
+    .hero-section {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)), url(../img/meeting.jpg);
+    }
+    .hero-text {
+        width: 100%;
+    }
+}

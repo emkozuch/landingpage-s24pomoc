@@ -11,60 +11,70 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
   <title>S24 Pomoc</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-default bg-dark sticky-top">
-    <a class="navbar-brand" href="#">S24 Pomoc</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse " id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item text-center">
-          <a class="nav-link" href="#service">Nasza usługa</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link" href="#pricing">Cennik</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link" href="#character">Dlaczego my?</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link" href="#">O nas</a>
-        </li>
-        <li class="nav-item text-center">
-          <a class="nav-link" href="#form">Kontakt</a>
-        </li>
-      </ul>
+  <div id="nav-section" class="nav-section sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#hero-section">S24 Pomoc</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-navicon"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <div class="nav-items-container">
+        <ul class="navbar-nav">
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#service-section">Nasza usługa</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#price-section">Cennik</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#about-section">Dlaczego my?</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#faq-section">FAQ</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="#form-section">Kontakt</a>
+          </li>
+        </ul>
+        <span class="navbar-text ml-auto">
+            <i class="fas fa-phone fa-2x"></i><span>+48 725 077 443</span>
+          </span>
+      </div>
     </div>
-  </nav>
+    </nav>
+  </div>
 
-  <div id="hero" class="hero-section">
+  <div id="hero-section" class="hero-section">
     <div class="container">
-      <div class="hero__text">
-        <h1 class="header__one">ZAŁOŻYMY DLA CIEBIE SPÓŁKĘ W 3 DNI</h1>
-        <h3 class="header__three">PROSTO, SZYBKO I OSZCZĘDNIE.</h3>
+      <div class="hero-text">
+        <h1 class="header-one">ZAŁOŻYMY DLA CIEBIE SPÓŁKĘ W 3 DNI</h1>
+        <h3 class="header-three">PROSTO, SZYBKO I OSZCZĘDNIE.</h3>
         <p class="paragraph">Rejestracja spółki to skomplikowany proces, który przysparza wiele problemów. Skorzystaj z
           pomocy naszych
           doradców, którzy spotkają się z Tobą osobiście i pomogą Ci zarejestrować Twoją spółkę</p>
       </div>
     </div>
     <div class="btn-container">
-      <a class="btn fas fa-angle-double-down fa-2x" href="#service"></a>
+      <a class="btn fas fa-angle-double-down fa-2x" href="#service-section"></a>
     </div>
   </div>
 
 
-  </div>
 
-  <div id="service" class="service__section">
-    <div class="container service__text text-center">
-      <h1 class="header__one">Oferujemy pomoc w rejestracji spółki<br> w internetowym systemie S24.</h1>
+
+  <div id="service-section" class="service-section">
+    <div class="container service-text text-center">
+      <h2 class="header-two">Oferujemy pomoc w rejestracji spółki w internetowym systemie S24.</h2>
+      <h3 class="header-three">Prosto, bez notariusza i kolejek.</h3>
     </div>
     <div class="container">
       <div class="card-deck">
@@ -75,7 +85,7 @@
           <div class="card-body">
             <h5 class="card-title text-center">KROK 1</h5>
             <hr class="separator">
-            <p class="card-text">Przygotowujemy Cię do rejestracji. Zakładamy potrzebne konta <br>i ustalamy
+            <p class="card-text">Przygotowujemy Cię do rejestracji. Zakładamy potrzebne konta i ustalamy
               brzmienie umowy.
               Dajemy Ci tyle czasu, ile potrzebujesz.</p>
 
@@ -88,7 +98,7 @@
           <div class="card-body">
             <h5 class="card-title text-center">KROK 2</h5>
             <hr class="separator">
-            <p class="card-text">Nasz doradca przyjeżdza do Ciebie osobiście i przeprowadza wraz<br> z Tobą
+            <p class="card-text">Nasz doradca przyjeżdza do Ciebie osobiście i przeprowadza wraz z Tobą
               cały proces rejestracji. Masz pełną kontrolę nad tym, co się dzieje.</p>
 
           </div>
@@ -111,18 +121,49 @@
   </div>
 
 
-  <div id="pricing" class="price__section">
-    <div class="container price_container text-center">
-      <h2>KOSZT REJESTRACJI KAŻDEJ SPÓŁKI TO <span>499 PLN BRUTTO</span>*</h2>
-      <p>*Cena nie obejmuje kosztów sądowych (350 złotych), wkładu do spółki oraz podatku PCC (0,5% od wkładu)</p>
+  <div id="price-section" class="price-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="header-two">Cennik</h2>
+      </div>
+      <table class="text-center table table-default table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Opis czynności</th>
+            <th scope="col">Cena brutto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Pomoc przy rejestracji spółki</th>
+            <td>499 PLN</td>
+          </tr>
+          <tr>
+            <th scope="row">Koszty sądowe</th>
+            <td>350 PLN</td>
+          </tr>
+          <tr>
+            <th scope="row">Wkłady do spółki</th>
+            <td>Wysokość ustalana przez wspólników</td>
+          </tr>
+          <tr>
+            <th scope="row">PCC</th>
+            <td>0,5% od wartości wkładu</td>
+          </tr>
+          <tr>
+            <th scope="row">Dojazd do klienta na terenie Warszawy i okolic</th>
+            <td>Gratis</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
-  <div id="character" class="character__section">
-    <div class="background"></div>
+  <div id="about-section" class="about-section">
+
     <div class="container">
-      <div class="section__text text-center">
-        <h1 class="header__main">Kiedy możemy Ci pomóc?</h1>
+      <div class="section-text text-center">
+        <h2 class="header-two">Kiedy możemy Ci pomóc?</h2>
       </div>
 
       <div class="card-deck">
@@ -153,102 +194,252 @@
       </div>
     </div>
   </div>
-  <div id="pricing" class="price__section">
-      <div class="container price_container text-center">
-        <h2>Nie handlujemy gotowymi spółkami i nie narażamy Cię na dodatkowe koszty. </h2>
-        <h3>Masz osobisty kontakt z naszym doradcą. Spółka jest w <span>100% Twoja</span> od samego początku.</h3>
+
+  <div id="faq-section" class="faq-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2 class="header-two">Najczęściej zadawane pytania</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="panel-group" id="accordion">
+            <div class="card">
+              <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse1">
+                <h5 class="header-five">
+                  Co to jest system S24?
+                </h5>
+              </div>
+
+              <div id="collapse1" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>System S24 to platforma internetowa prowadzona przez Ministerstwo Sprawiedliwości, która umożliwia
+                    rejestrację spółki handlowej on-line.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse2">
+                <h5 class="header-five">
+                  Czy S24 i KRS to jest to samo?
+                </h5>
+              </div>
+
+              <div id="collapse2" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Spółki prawa handlowego to bardzo popularna forma prowadzenia działalności gospodarczej. Podlegają
+                    one obowiązkowi rejestracji w rejestrze przedsiębiorców Krajowego Rejestru Sądowego (potocznie
+                    zwanym KRS).
+                    Żeby zarejestrować spółkę w KRS, istnieją dwie drogi.
+                    Droga klasyczna polega na złożeniu papierowych dokumentów (w tym dokumentów notarialnych) do KRS.
+                    Niestety, czas oczekiwania na wpis w KRS wynosi aktualnie nawet 3-4 miesiące. Innymi słowy, na
+                    rozpoczęcie swojego biznesu trzeba czekać prawie pół roku!
+                    Druga droga to rejestracja spółki przez system S24. Pozwala ona na zawiązanie oraz prowadzenie
+                    spółki jawnej, spółki komandytowej i spółki z ograniczoną odpowiedzialnością bez konieczności
+                    korzystania z notariusza i długiego oczekiwania w kolejce w KRS. Średni czas rozpatrywania przez
+                    sądy rejestrowe wniosków składanych z wykorzystaniem platformy S24 wynosi jedynie 2 – 3 dni
+                    robocze.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse3">
+                <h5 class="header-five">
+                  Dlaczego warto założyć spółkę w systemie S24?
+                </h5>
+              </div>
+
+              <div id="collapse3" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Po pierwsze, oszczędzasz bardzo dużo czasu. Okres oczekiwania na rejestrację spółki to 2-3 dni
+                    robocze, w porównaniu do 3-4 miesięcy przy standardowej rejestracji.
+                    Po drugie, oszczędzamy pieniądze. Opłata sądowa za rejestrację spółki w systemie s24 to jedyne
+                    350zł w porównaniu do 600 zł uiszczanych w postępowaniu tradycyjnym.
+                    Po trzecie, rejestracja spółki w systemie S24 nie wymaga wizyty u notariusza. Oszczędzasz w ten
+                    sposób czas oraz pieniądze.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse4">
+                <h5 class="header-five">
+                  Co będę potrzebował do założenia spółki w systemie S24?
+                </h5>
+              </div>
+
+              <div id="collapse4" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <p>Po pierwsze, będziesz potrzebował profil zaufany ePUAP. Jego założenie jest bardzo proste.
+                    Prawdopodobnie nie będziesz musiał nawet wychodzić z domu. Dokładna instrukcja założenia profilu
+                    epuap znajduje się na stronie <a href="https://obywatel.gov.pl/zaloz-profil-zaufany" target="_blank">www.obywatel.gov.pl</a>
+                    Po drugie, będziesz potrzebował konto w systemie S24. Dokładna instrukcja założenia konta znajduje
+                    się na stronie:
+                    <a href="https://ekrs.ms.gov.pl/s24/documents/10184/0/Instrukcja+tworzenia+i+obs%C5%82ugi+kont+w+portalu+S24+i+RDF+v+1.4.pdf/ac5f2e1f-4647-40ba-b776-6f973463795d"
+                      target="_blank">www.ekrs.ms.gov.pl</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div class="card">
+            <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse5">
+              <h5 class="header-five">
+                Jakie spółki mogę założyć w systemie S24?
+              </h5>
+            </div>
+
+            <div id="collapse5" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>W systemie S24 można założyć spółkę z ograniczoną odpowiedzialnością, spółkę jawną oraz spółkę
+                  komandytową.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse6">
+              <h5 class="header-five">
+                Czym różni się spółka założona w systemie S24 od spółki założonej w sposób tradycyjny?
+              </h5>
+            </div>
+
+            <div id="collapse6" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>Spółka założona w systemie S24 funkcjonuje dokładnie na takiej samej zasadzie jak spółka założona w
+                  sposób tradycyjny. Jest to w pełni uznawany podmiot prawa, założony w procedurze utworzonej oraz
+                  nadzorowanej przez organy państwowe.
+                  Jedyna różnica polega na tym, że w systemie S24 mamy ograniczoną możliwość zmieniania umowy spółki.
+                  Brzmienie umowy wybieramy spośród kilkunastu dostępnych opcji. Z jednej strony, zmniejsza to
+                  elastyczność w tworzeniu umowy. W praktyce, umowy dostępne w systemie S24 w zupełności wystarczają
+                  przy prowadzeniu większości działalności gospodarczych. Co więcej, nie narażamy się na ryzyko błędu
+                  lub pomyłki notariusza.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse7">
+              <h5 class="header-five">
+                Na czym w szczegółach polega nasza usługa rejestracji spółki w systemie S24?
+              </h5>
+            </div>
+
+            <div id="collapse7" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>Nasza usługa polega na osobistej asyście doradcy przy procesie tworzenia Twojej spółki. Spotykasz
+                  się z naszym doradcą i wspólnie przechodzicie cały proces rejestracji na Twoim koncie w systemie S24.
+                  Dzięki temu, powstała spółka jest od samego początku w 100% Twoja. Nie musisz się zastanawiać, kto ją
+                  zakładał i czy nie jest obciążona długami.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="button" data-toggle="collapse" data-target="#collapse8">
+              <h5 class="header-five">
+                Czym różni się nasza usługa od usługi sprzedaży gotowej spółki zoo?
+              </h5>
+            </div>
+
+            <div id="collapse8" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>Po wpisaniu w wyszukiwarkę „rejestracja spółki przez Internet” odnajdujemy mnóstwo ofert sprzedaży
+                  gotowych spółek. Oferenci najczęściej przekonują, że kupno gotowej spółki to najlepsza droga do
+                  rozpoczęcia swojego biznesu.
+                  Kupienie gotowej spółki polega na tym, że nabywamy udziały w założonej już wcześniej spółce. W ten
+                  sposób możemy zacząć działać już w kilka chwil po złożeniu podpisów. Taki komfort ma jednak swoją
+                  cenę – kupno gotowej spółki to koszt zaczynający się od ok. 1800 PLN.
+                  Nasza usługa polega na tym, że pomagamy Ci zarejestrować swój a własną spółkę. Nie musisz kupować
+                  żadnych udziałów, ponieważ od samego początku jesteś właścicielem. W ten sposób masz pełną kontrolę
+                  nad procesem powstawania spółki. Ponadto, masz pewność, że nie kupujesz obciążonego lub zadłużonego
+                  podmiotu.
+                  W przypadku naszej usługi, na rozpoczęcie działania będziesz musiał poczekać do 2-3 dni roboczych. W
+                  zamian, koszty założenia swojej spółki są jednak zdecydowanie niższe.
+                  Jeżeli zatem musisz mieć gotową spółkę już dzisiaj, powinieneś się zainteresować usługą zakupu
+                  gotowej spółki. Jeżeli jednak jesteś w stanie poczekać do 3 dni roboczych, wtedy zachęcamy do
+                  kontaktu z nami. Oszczędzisz dużo pieniędzy osiągając ten sam efekt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-  <!-- <div id="about__us" class="about__section"> -->
-  <!-- <div class="text-center">
-      <h2 class="header__two">Kilka słów od nas</h2>
-    </div>
-    <div class="text-center"> -->
-
-
-
   </div>
-  </div>
-  <div id="form" class="row form__section">
-    <div class="col-md-5 col-sm-12 form__text">
-      <div class="contact-info">
-        <span>
-          <i class="fas fa-map-marker-alt"></i>
-          Adres
-        </span>
-        <p>Ul. Janiszowska 14 lokal 3<br> 02-264 Warszawa, Polska</p>
-        <span>
-          <i class="fas fa-phone"></i>
-          Telefon
-        </span>
-        <p>+48 22 299 34 28</p>
-      
-        <span>
-          <i class="fas fa-at"></i>
-          Email
-        </span>
-        <p>biuro@dmplegal.pl</p>
+
+  <div id="form-section" class="form-section">
+    <div class="row">
+      <div class="col-md-5 col-sm-12 form-text">
+        <div class="contact-info">
+          <span>
+            <i class="fas fa-map-marker-alt"></i>
+            Adres
+          </span>
+          <p>ul. Janiszowska 14 lokal 3<br> 02-264 Warszawa, Polska</p>
+          <span>
+            <i class="fas fa-phone"></i>
+            Telefon
+          </span>
+          <p>+48 725 077 443</p>
+
+          <span>
+            <i class="fas fa-at"></i>
+            Email
+          </span>
+          <p>info@s24pomoc.pl</p>
+        </div>
+        <hr class="separator">
       </div>
-    </div>
-    
 
 
-    <div class="col-md-7 col-sm-12 form__column">
-      <h1 class="header__one">Wypełnij formularz</h1>
-      <h4 class="header__four">Skontaktujemy się z Tobą w ciągu 24 godzin.</h4>
-      <form class="form">
-        <div class="form-group text-input">
-          <input type="text" name="fullname" class="form-control" id="inputName" placeholder="Imię i Nazwisko" required>
-        </div>
-        <div class="form-group text-input">
-          <input type="tel" class="form-control" id="inputPhone" placeholder="Telefon" required>
-        </div>
-        <div class="form-group text-input">
-          <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
-        </div>
 
-        <div class="form-group select-option">
-          <label for="FormControlSelect">Jaką spółkę chcesz założyć?</label>
-          <select class="form-control" id="formControlSelect">
-            <option>spółka jawna</option>
-            <option>spółka z.o.o.</option>
-            <option>spółka komantydowa</option>
-          </select>
+
+      <div class="col-md-7 col-sm-12 form-column">
+        <div class="section-heading text-center">
+          <h2 class="header-two">Wypełnij formularz</h2>
+          <h3 class="header-three">Skontaktujemy się z Tobą w ciągu 24 godzin.</h3>
         </div>
-        <div class="form-check checkbox-container">
-          <input class="form-check-input" type="checkbox" value="" id="check1" required>
-          <div class="tooltip-container">
-            <label class="form-check-label" for="check1"> Wyrażam zgodę na kierowanie do mnie marketingu
-              bezpośredniego przez spółkę DMP LEGAL spółka z
-              ograniczoną odpowiedzialnością dotyczącego oferowanych produktów...
-            </label>
-            <div class="tooltip-text">
-              <p>Wyrażam zgodę na kierowanie do mnie marketingu bezpośredniego przez spółkę DMP LEGAL spółka z
+        <form class="form">
+          <div class="form-group text-input">
+            <input type="text" name="fullname" class="form-control" id="inputName" placeholder="Imię i Nazwisko"
+              required>
+          </div>
+          <div class="form-group text-input">
+            <input type="tel" class="form-control" id="inputPhone" placeholder="Telefon" required>
+          </div>
+          <div class="form-group text-input">
+            <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
+          </div>
+
+          <div class="form-group select-option">
+            <label for="formControlSelect">Jaką spółkę chcesz założyć?</label>
+            <select class="form-control" id="formControlSelect">
+              <option>spółka jawna</option>
+              <option>spółka z.o.o.</option>
+              <option>spółka komantydowa</option>
+            </select>
+          </div>
+          <div class="form-check checkbox-container">
+            <input class="form-check-input" type="checkbox" value="" id="check1" required>
+            <div class="tooltip-container">
+              <label class="form-check-label" for="check1"> Wyrażam zgodę na kierowanie do mnie marketingu
+                bezpośredniego przez spółkę DMP LEGAL spółka z
                 ograniczoną odpowiedzialnością dotyczącego oferowanych produktów i usług przy użyciu
                 telekomunikacyjnych urządzeń końcowych i automatycznych systemów wywołujących (np. wysyłanie sms,
-                e-mail, kontaktowanie się przez telefon), przy wykorzystaniu moich danych osobowych. </p>
+                e-mail, kontaktowanie się przez telefon), przy wykorzystaniu moich danych osobowych.</label>
             </div>
           </div>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="check2" required>
-          <div class="tooltip-container-second">
-            <label class="form-check-label" for="check2"> Wyrażam zgodę na otrzymywanie od spółki DMP LEGAL spółka z
-              ograniczoną odpowiedzialnością informacji
-              handlowych drogą elektroniczną zgodnie z...
-            </label>
-            <div class="tooltip-text">
-              <p>Wyrażam zgodę na otrzymywanie od spółki DMP LEGAL spółka z ograniczoną odpowiedzialnością informacji
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check2" required>
+            <div class="tooltip-container-second">
+              <label class="form-check-label" for="check2"> Wyrażam zgodę na otrzymywanie od spółki DMP LEGAL spółka z
+                ograniczoną odpowiedzialnością informacji
                 handlowych drogą elektroniczną zgodnie z ustawą z dnia 18.07.2002 r. (Dz.U. nr 144, poz.1204 z późn.
-                zm.) o świadczeniu usług drogą elektroniczną.</p>
+                zm.) o świadczeniu usług drogą elektroniczną.
+              </label>
             </div>
           </div>
-        </div>
-        <div class="button">
-          <button type="submit" class="btn btn-primary float-right">Wyślij</button>
-        </div>
-      </form>
+          <div class="button">
+            <button type="submit" class="btn btn-primary float-right">Wyślij</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
   <footer id="footer-section" class="footer-section">

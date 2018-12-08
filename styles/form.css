@@ -1,0 +1,150 @@
+.form-section {
+    background-image: radial-gradient(72% 147% at bottom left, rgba(197, 161, 77, 0)47%, rgba(31, 36, 40, 0.95)63%, rgba(31, 36, 40, 0.95)15%), url(../img/handshake.jpg);
+}
+/* -----------------CONTACT FORM COLUMN-------------------- */
+
+.form-section .row {
+    padding: 50px 150px 0px 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.form-column {
+    padding: 100px 0px;
+}
+
+.form {
+    width: 75%;
+    margin-left: 80px;
+    color: rgb(133, 133, 133);
+}
+
+.form-column .section-heading {
+    margin-bottom: 20px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.form-column .header-two {
+    color: white;
+}
+
+.form-column .header-three {
+    color: #C5A14D;
+}
+
+.form-control {
+    background-color: inherit;
+    color: #C5A14D;
+}
+
+.form-control:focus {
+    color: #C5A14D;
+    background-color: inherit;
+    border: #C5A14D 1px solid;
+    box-shadow: none;
+}
+.form-check-label {
+    font-size: 16px;
+    cursor: pointer;
+    text-align: justify;
+    padding-right: 15px;
+    color: rgb(133, 133, 133);
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+.form .button {
+    margin-top: 10px;
+}
+
+.form .btn {
+    margin-top: 30px;
+    width: 100px;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    border: 1px solid rgb(133, 133, 133);
+    background-color: inherit;
+    box-shadow: none !important;
+}
+
+.form .btn:hover {
+    color: #C5A14D;
+}
+.form .btn:hover:active{
+    background-color: #C5A14D;
+}
+
+/* -----------------CONTACT INFO COLUMN-------------------- */
+
+.form-text {
+    padding :250px 150px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+}
+
+.form-text .separator{
+visibility: hidden;
+}
+.form-section .fas {
+    margin-right: 10px;
+    color: #1F2428;
+}
+.form-text span {
+    color: #1F2428;
+}
+/* -----------------MOBILE-------------------- */
+
+@media (max-width: 768px) {
+    .form-section {
+        background-image: linear-gradient(rgba(31, 36, 40, 0.88),rgba(31, 36, 40, 0.88)), url(../img/handshake.jpg);
+        height: auto;
+    }
+    .form {
+        width: 100%;
+        margin-left: 0px;
+        color: rgb(133, 133, 133);
+    }
+    .form-text {
+        padding : 0px;
+        margin-bottom: 20px;
+    }
+    .form-text .contact-info {
+        margin-bottom: 50px;
+    }
+    .form-text .separator{
+        visibility: visible;
+        width: 75%;
+        }
+        .form-section .form-text .fas {
+            color: #C5A14D;
+        }
+        .form-section .form-text span {
+            color: #C5A14D;
+        }  
+}
+@media (max-width: 576px){
+    .form-section .row {
+        padding: 50px 0px 0px 0px;
+    }
+    .form {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .form-section .form-column .section-heading {
+        margin-left: 0px;
+    }
+    .form-section .form-column{
+        padding: 0px 10px;
+        margin-top: 50px;
+    }
+    .form-text {
+        padding : 0px;
+        margin-bottom: 20px;
+    }
+}

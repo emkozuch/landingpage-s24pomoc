@@ -1,0 +1,50 @@
+.service-section {
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.service-text {
+    margin-bottom: 70px;
+}
+
+.service-section .header-two {
+    color: rgb(133, 133, 133);
+}
+
+.header-three {
+    color: #C5A14D;
+}
+
+.service-section .card {
+    padding-top: 10px;
+    color: white;
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.service-section .icon {
+    color: rgb(255, 255, 255);
+}
+
+.service-section .card:hover .icon {
+    color: #C5A14D;
+}
+
+.card-title {
+    color: rgb(133, 133, 133);
+}
+
+.separator {
+    width: 30%;
+    border: 2px solid #C5A14D;
+}
+.service-section .card-text {
+    font-size: 20px;
+    text-align: center;
+}
+@media (max-width:1200px){
+    .service-section {
+        height: auto;
+    }
+}

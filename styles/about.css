@@ -1,0 +1,44 @@
+.about-section {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(31, 36, 40, 0.8), rgba(31, 36, 40, 0.8)), url("../img/office.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.about-section .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about-section .header-two {
+    color: white;
+    margin-bottom: 150px;
+}
+.about-section .card-deck{
+    margin-bottom: 100px;
+}
+
+.about-section .card {
+    background-color: rgba(115, 115, 116, 0.6);
+}
+
+.about-section .card-body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.about-section .card-text {
+    font-size: 20px;
+    text-align: center;
+    color: #C5A14D
+}
+@media (max-width: 992px){
+    .about-section {
+        height: auto;
+    }
+}
+    

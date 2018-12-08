@@ -1,0 +1,28 @@
+.price-section {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    color: #1F2428;
+}
+.price-section .container{
+    padding: 10px 50px;
+}
+.price-section .section-header{
+    margin-bottom: 50px;
+}
+
+.price-section .table thead{
+    color: #C5A14D;
+    background-color: #1F2428;
+}
+.price-section .table td{
+    border: 2px solid #C5A14D;
+}
+.price-section .table th{
+    border: 2px solid #C5A14D;
+}
+.table th {
+    width: 50% !important;
+}
