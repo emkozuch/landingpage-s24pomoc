@@ -5,7 +5,10 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <title>S24 Pomoc - Pomoc w założeniu społki w internetowym systemie S24</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
@@ -14,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
-  <title>S24 Pomoc</title>
+  
 </head>
 
 <body>
@@ -396,28 +399,29 @@
           <h2 class="header-two">Wypełnij formularz</h2>
           <h3 class="header-three">Skontaktujemy się z Tobą w ciągu 24 godzin.</h3>
         </div>
-        <form class="form">
+        <div id="send_form_status"></div>
+        <form method="POST" action="send_form.php" class="form" id="contact_form">
           <div class="form-group text-input">
-            <input type="text" name="fullname" class="form-control" id="inputName" placeholder="Imię i Nazwisko"
+            <input type="text" name="name" class="form-control" id="inputName" placeholder="Imię i Nazwisko"
               required>
           </div>
           <div class="form-group text-input">
-            <input type="tel" class="form-control" id="inputPhone" placeholder="Telefon" required>
+            <input type="text" name="phone" class="form-control" id="inputPhone" placeholder="Telefon" required>
           </div>
           <div class="form-group text-input">
-            <input type="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
+            <input type="text" name="email" class="form-control" id="inputEmail" placeholder="E-mail" required>
           </div>
 
           <div class="form-group select-option">
             <label for="formControlSelect">Jaką spółkę chcesz założyć?</label>
-            <select class="form-control" id="formControlSelect">
+            <select name="typeOfCompany" class="form-control" id="formControlSelect">
               <option>spółka jawna</option>
               <option>spółka z.o.o.</option>
               <option>spółka komantydowa</option>
             </select>
           </div>
           <div class="form-check checkbox-container">
-            <input class="form-check-input" type="checkbox" value="" id="check1" required>
+            <input class="form-check-input" name="checkbox1" type="checkbox" value="Wyrażam zgodę na kierowanie do mnie marketingu bezpośredniego przez spółkę DMP LEGAL sp. z o.o." id="check1" required>
             <div class="tooltip-container">
               <label class="form-check-label" for="check1"> Wyrażam zgodę na kierowanie do mnie marketingu
                 bezpośredniego przez spółkę DMP LEGAL spółka z
@@ -427,7 +431,7 @@
             </div>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="check2" required>
+            <input class="form-check-input" name="checkbox2" type="checkbox" value="Wyrażam zgodę na otrzymywanie informacji handlowych od spółki DMP LEGAL sp. z o.o." id="check2" required>
             <div class="tooltip-container-second">
               <label class="form-check-label" for="check2"> Wyrażam zgodę na otrzymywanie od spółki DMP LEGAL spółka z
                 ograniczoną odpowiedzialnością informacji
@@ -437,7 +441,7 @@
             </div>
           </div>
           <div class="button">
-            <button type="submit" class="btn btn-primary float-right">Wyślij</button>
+            <button type="submit" id="sendBtn" class="btn btn-primary float-right">Wyślij</button>
           </div>
         </form>
       </div>
@@ -464,13 +468,14 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="script.js"></script>
+ 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 
