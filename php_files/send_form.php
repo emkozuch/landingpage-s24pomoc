@@ -22,5 +22,5 @@ $headers .= "Reply-To: $email \r\n";
 
 mail($to,$emailSubject,$emailBody,$headers);
 
-header("location: ../thankyou.html");
+header("location: ../thankyou_page/thankyou.html");
 ?>

@@ -1,6 +1,7 @@
 .form-section {
     background-image: radial-gradient(72% 147% at bottom left, rgba(197, 161, 77, 0)47%, rgba(31, 36, 40, 0.95)63%, rgba(31, 36, 40, 0.95)15%), url(../img/handshake.jpg);
 }
+
 /* -----------------CONTACT FORM COLUMN-------------------- */
 
 .form-section .row {
@@ -44,6 +45,7 @@
     border: #C5A14D 1px solid;
     box-shadow: none;
 }
+
 .form-check-label {
     font-size: 16px;
     cursor: pointer;
@@ -55,6 +57,7 @@
 .form-check-input {
     cursor: pointer;
 }
+
 .form .button {
     margin-top: 10px;
 }
@@ -72,14 +75,15 @@
 .form .btn:hover {
     color: #C5A14D;
 }
-.form .btn:hover:active{
+
+.form .btn:hover:active {
     background-color: #C5A14D;
 }
 
 /* -----------------CONTACT INFO COLUMN-------------------- */
 
 .form-text {
-    padding :250px 150px 10px 0px;
+    padding: 250px 150px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,25 +92,29 @@
     font-size: 21px;
 }
 
-.form-text .separator{
-visibility: hidden;
+.form-text .separator {
+    visibility: hidden;
 }
+
 .form-section .fas {
     margin-right: 10px;
     color: #1F2428;
 }
+
 .form-text span {
     color: #1F2428;
 }
-.error-container{
+
+.error-container {
     margin-left: 20px;
     color: red;
 }
+
 /* -----------------MOBILE-------------------- */
 
 @media (max-width: 768px) {
     .form-section {
-        background-image: linear-gradient(rgba(31, 36, 40, 0.88),rgba(31, 36, 40, 0.88)), url(../img/handshake.jpg);
+        background-image: linear-gradient(rgba(31, 36, 40, 0.88), rgba(31, 36, 40, 0.88)), url(../img/handshake.jpg);
         height: auto;
     }
     .form {
@@ -115,24 +123,25 @@ visibility: hidden;
         color: rgb(133, 133, 133);
     }
     .form-text {
-        padding : 0px;
+        padding: 0px;
         margin-bottom: 20px;
     }
     .form-text .contact-info {
         margin-bottom: 50px;
     }
-    .form-text .separator{
+    .form-text .separator {
         visibility: visible;
         width: 75%;
-        }
-        .form-section .form-text .fas {
-            color: #C5A14D;
-        }
-        .form-section .form-text span {
-            color: #C5A14D;
-        }  
+    }
+    .form-section .form-text .fas {
+        color: #C5A14D;
+    }
+    .form-section .form-text span {
+        color: #C5A14D;
+    }
 }
-@media (max-width: 576px){
+
+@media (max-width: 576px) {
     .form-section .row {
         padding: 50px 0px 0px 0px;
     }
@@ -143,12 +152,12 @@ visibility: hidden;
     .form-section .form-column .section-heading {
         margin-left: 0px;
     }
-    .form-section .form-column{
+    .form-section .form-column {
         padding: 0px 10px;
         margin-top: 50px;
     }
     .form-text {
-        padding : 0px;
+        padding: 0px;
         margin-bottom: 20px;
     }
 }

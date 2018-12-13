@@ -1,37 +1,45 @@
-.faq-section{
+.faq-section {
     padding: 100px 0px;
     background-color: white;
 }
-.faq-section .row{
-padding-left: 0px !important;
+
+.faq-section .row {
+    padding-left: 0px !important;
 }
-.faq-section .section-header{
+
+.faq-section .section-header {
     color: #1F2428;
     margin-bottom: 100px;
 }
-.faq-section .card-header{
-background-color: #A5A8AD;
-height: 100px;
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
+
+.faq-section .card-header {
+    background-color: #A5A8AD;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.faq-section .card-header:hover{
+
+.faq-section .card-header:hover {
     cursor: pointer;
 }
-.faq-section .card-body{
-text-align: center;
-color: #C5A14D;
+
+.faq-section .card-body {
+    text-align: center;
+    color: #C5A14D;
 }
-.faq-section .card-body a{
+
+.faq-section .card-body a {
     text-decoration: none;
     color: #211929;
 }
 
-.faq-section .header-five{
+.faq-section a{
+    text-decoration: none;
     color: white;
+    font-size: 20px;
 }
-.faq-section .card{
+.faq-section .card {
     margin-bottom: 20px;
 }

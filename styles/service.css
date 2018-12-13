@@ -35,11 +35,13 @@
     width: 30%;
     border: 2px solid #C5A14D;
 }
+
 .service-section .card-text {
     font-size: 20px;
     text-align: center;
 }
-@media (max-width:1200px){
+
+@media (max-width:1200px) {
     .service-section {
         height: auto;
     }

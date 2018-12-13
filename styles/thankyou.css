@@ -1,24 +1,28 @@
-body{
+body {
     background-color: #1F2428;
     font-family: 'Oswald', sans-serif;
 }
 
-.jumbotron{
+.jumbotron {
     margin-top: 100px;
     margin-bottom: 100px;
     background-color: white;
 }
-.header-one{
+
+.header-one {
     color: #1F2428;
 }
-.paragraph{
+
+.paragraph {
     color: #C5A14D;
     font-size: 30px;
 }
-.btn-container{
+
+.btn-container {
     margin-top: 50px;
 }
-.btn-container .btn{
+
+.btn-container .btn {
     border-radius: 0px;
     background-color: #1F2428;
     border: 1px solid rgb(133, 133, 133);
@@ -26,11 +30,12 @@ body{
     text-decoration: none;
     color: #C5A14D;
 }
+
 .btn-container .btn:hover {
     color: #1F2428;
     background-color: white;
-
 }
-.btn-container .btn:hover:active{
+
+.btn-container .btn:hover:active {
     background-color: #C5A14D;
 }

@@ -6,10 +6,7 @@
 @import url('./faq.css');
 @import url('./form.css');
 @import url('./footer.css');
-
-
 body {
     background-color: #1F2428;
     font-family: 'Oswald', sans-serif;
 }
-

@@ -12,7 +12,7 @@ function checkName() {
         nameError.innerHTML = "Niedozwolone znaki";
         return false;
     }
-    
+
 }
 
 function checkPhone() {
