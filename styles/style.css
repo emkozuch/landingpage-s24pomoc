@@ -13,6 +13,3 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-#send_form_status{border: 1px dashed #ccc;display: none; padding: 0 10px; margin: 10px 0}
-.status_ok{color: #060}
-.status_err{color: #F00};

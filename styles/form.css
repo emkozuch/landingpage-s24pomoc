@@ -98,6 +98,9 @@ visibility: hidden;
 .form-text span {
     color: #1F2428;
 }
+.error-container{
+    color: red;
+}
 /* -----------------MOBILE-------------------- */
 
 @media (max-width: 768px) {
