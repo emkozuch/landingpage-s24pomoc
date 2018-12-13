@@ -99,6 +99,7 @@ visibility: hidden;
     color: #1F2428;
 }
 .error-container{
+    margin-left: 20px;
     color: red;
 }
 /* -----------------MOBILE-------------------- */

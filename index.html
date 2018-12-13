@@ -3,21 +3,28 @@
 
 <head>
 
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>S24 Pomoc - Pomoc w założeniu społki w internetowym systemie S24</title>
-  <meta name="description" content=""/>
-  <meta name="keywords" content=""/>
-  <meta name="author" content="Marcin Kożuchowski"/>
+  <meta name="description" content="Skorzystaj z pomocy naszych doradców, którzy spotkają się z Tobą osobiście i pomogą Ci zarejestrować Twoją spółkę" />
+  <meta name="keywords" content="S24, S24 Pomoc, zakładanie spółki, jak założyć spółkę, zakładanie spółki przez internet"/>
+  <meta name="author" content="Marcin Kożuchowski" />
 
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous"/>
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-    crossorigin="anonymous"/>
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
-  <link rel="stylesheet" type="text/css" href="./styles/style.css"/>
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="./styles/style.css" />
 
-  
+
 </head>
 
 <body>
@@ -32,28 +39,28 @@
       </button>
       <div class="collapse navbar-collapse " id="navbarNav">
         <div class="nav-items-container">
-        <ul class="navbar-nav">
-          <li class="nav-item text-center">
-            <a class="nav-link" href="#service-section">Nasza usługa</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="#price-section">Cennik</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="#about-section">Dlaczego my?</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="#faq-section">FAQ</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link" href="#form-section">Kontakt</a>
-          </li>
-        </ul>
-        <span class="navbar-text ml-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#service-section">Nasza usługa</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#price-section">Cennik</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#about-section">Dlaczego my?</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#faq-section">FAQ</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#form-section">Kontakt</a>
+            </li>
+          </ul>
+          <span class="navbar-text ml-auto">
             <i class="fas fa-phone fa-2x"></i><span>+48 725 077 443</span>
           </span>
+        </div>
       </div>
-    </div>
     </nav>
   </div>
 
@@ -61,7 +68,7 @@
     <div class="container">
       <div class="hero-text">
         <h1 class="header-one">ZAŁOŻYMY DLA CIEBIE SPÓŁKĘ W 3 DNI</h1>
-        <h3 class="header-three">PROSTO, SZYBKO I OSZCZĘDNIE.</h3>
+        <h3 class="header-three">Prosto, bez notariusza i kolejek</h3>
         <p class="paragraph">Rejestracja spółki to skomplikowany proces, który przysparza wiele problemów. Skorzystaj z
           pomocy naszych
           doradców, którzy spotkają się z Tobą osobiście i pomogą Ci zarejestrować Twoją spółkę</p>
@@ -78,7 +85,6 @@
   <div id="service-section" class="service-section">
     <div class="container service-text text-center">
       <h2 class="header-two">Oferujemy pomoc w rejestracji spółki w internetowym systemie S24.</h2>
-      <h3 class="header-three">Prosto, bez notariusza i kolejek.</h3>
     </div>
     <div class="container">
       <div class="card-deck">
@@ -399,16 +405,16 @@
           <h2 class="header-two">Wypełnij formularz</h2>
           <h3 class="header-three">Skontaktujemy się z Tobą w ciągu 24 godzin.</h3>
         </div>
-        <form name="contact-form" method="POST" onsubmit="return !!(checkName() & checkPhone() & checkEmail())" action="./php files/send_form.php" class="form" id="contact_form">
+        <form name="contact-form" method="POST" onsubmit="return !!(checkName() & checkPhone() & checkEmail() & checkCheckbox1() & checkCheckbox2());" action="./php_files/send_form.php"
+          class="form" id="contact_form">
           <div class="form-group text-input">
-            <input type="text" name="name" class="form-control" id="inputName" placeholder="Imię i Nazwisko"
-              required>
-              <div class="error-container">
+            <input type="text" name="name" class="form-control" id="inputName" placeholder="Imię i Nazwisko" required>
+            <div class="error-container">
               <p id="name-error" class="name-error"></p>
             </div>
           </div>
           <div class="form-group text-input">
-            <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Telefon" >
+            <input type="tel" name="phone" class="form-control" id="inputPhone" placeholder="Telefon" required>
             <div class="error-container">
               <p id="phone-error" class="phone-error"></p>
             </div>
@@ -429,24 +435,28 @@
             </select>
           </div>
           <div class="form-check checkbox-container">
-            <input class="form-check-input" name="checkbox1" type="checkbox" value="Wyrażam zgodę na kierowanie do mnie marketingu bezpośredniego przez spółkę DMP LEGAL sp. z o.o." id="check1" required>
-            
-              <label class="form-check-label" for="check1"> Wyrażam zgodę na kierowanie do mnie marketingu
-                bezpośredniego przez spółkę DMP LEGAL spółka z
-                ograniczoną odpowiedzialnością dotyczącego oferowanych produktów i usług przy użyciu
-                telekomunikacyjnych urządzeń końcowych i automatycznych systemów wywołujących (np. wysyłanie sms,
-                e-mail, kontaktowanie się przez telefon), przy wykorzystaniu moich danych osobowych.</label>
-            
+            <input class="form-check-input" name="checkbox1" type="checkbox" value="Wyrażam zgodę na kierowanie do mnie marketingu bezpośredniego przez spółkę DMP LEGAL sp. z o.o."
+              id="check1" required>
+            <label class="form-check-label" for="check1"> Wyrażam zgodę na kierowanie do mnie marketingu
+              bezpośredniego przez spółkę DMP LEGAL spółka z
+              ograniczoną odpowiedzialnością dotyczącego oferowanych produktów i usług przy użyciu
+              telekomunikacyjnych urządzeń końcowych i automatycznych systemów wywołujących (np. wysyłanie sms,
+              e-mail, kontaktowanie się przez telefon), przy wykorzystaniu moich danych osobowych.</label>
+          </div>
+          <div class="error-container">
+            <p id="check-first-error" class="check1-error"></p>
           </div>
           <div class="form-check">
-            <input class="form-check-input" name="checkbox2" type="checkbox" value="Wyrażam zgodę na otrzymywanie informacji handlowych od spółki DMP LEGAL sp. z o.o." id="check2" required>
-            <div class="tooltip-container-second">
-              <label class="form-check-label" for="check2"> Wyrażam zgodę na otrzymywanie od spółki DMP LEGAL spółka z
-                ograniczoną odpowiedzialnością informacji
-                handlowych drogą elektroniczną zgodnie z ustawą z dnia 18.07.2002 r. (Dz.U. nr 144, poz.1204 z późn.
-                zm.) o świadczeniu usług drogą elektroniczną.
-              </label>
-            </div>
+            <input class="form-check-input" name="checkbox2" type="checkbox" value="Wyrażam zgodę na otrzymywanie informacji handlowych od spółki DMP LEGAL sp. z o.o."
+              id="check2" required>
+            <label class="form-check-label" for="check2"> Wyrażam zgodę na otrzymywanie od spółki DMP LEGAL spółka z
+              ograniczoną odpowiedzialnością informacji
+              handlowych drogą elektroniczną zgodnie z ustawą z dnia 18.07.2002 r. (Dz.U. nr 144, poz.1204 z późn.
+              zm.) o świadczeniu usług drogą elektroniczną.
+            </label>
+          </div>
+          <div class="error-container">
+            <p id="check-second-error" class="check2-error"></p>
           </div>
           <div class="button">
             <button type="submit" name="submit" id="sendBtn" class="btn btn-primary float-right" value="Wyślij">Wyślij</button>
@@ -466,8 +476,8 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-    <script src="./js files/navbar.js"></script>
-    <script src="./js files/form.js"></script>
+  <script src="./js_files/navbar.js"></script>
+  <script src="./js_files/form.js"></script>
 </body>
 
 
