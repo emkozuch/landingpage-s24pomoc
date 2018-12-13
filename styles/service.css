@@ -27,8 +27,9 @@
     color: #C5A14D;
 }
 
-.card-title {
+.service-section .card-title {
     color: rgb(133, 133, 133);
+    font-size: 20px;
 }
 
 .separator {
