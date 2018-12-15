@@ -7,7 +7,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-attachment: fixed;
+}
+
+.hero-section .container {
+    margin-left: 5%;
 }
 
 .hero-text {
@@ -69,13 +76,15 @@
     .hero-section .paragraph {
         font-size: 20px;
     }
-}
-
-@media (max-width:576px) {
-    .hero-section {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/meeting.jpg);
-    }
-    .hero-text {
-        width: 100%;
+    .hero-section .container {
+        margin-left: auto;
     }
 }
+    @media (max-width:576px) {
+        .hero-section {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/meeting.jpg);
+        }
+        .hero-text {
+            width: 100%;
+        }
+    }
