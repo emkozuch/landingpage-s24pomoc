@@ -16,7 +16,7 @@ $emailBody  = "Imię i Nazwisko: $name\n\n".
   "Zgoda 1: $checkbox1\n\n".
   "Zgoda 2: $checkbox2\n\n";
 
-$to = "info@s24pomoc.pl";
+$to = "xxxx@s24pomoc.pl";
 $headers = "From: $emailFrom \r\n";
 $headers .= "Reply-To: $email \r\n";
 
